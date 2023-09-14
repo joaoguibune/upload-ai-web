@@ -52,8 +52,8 @@ export function App() {
               rounded-md aspect-video 
               cursor-pointer border-dashed 
               text-sm flex-col gap-2 items-center 
-              justify-center text-muted-foreground
-              hover:bg-primary/30
+              justify-center text-white
+              hover:bg-primary
               "
             >
               <FileVideo className="w-4 h-4" />
@@ -80,7 +80,7 @@ export function App() {
           </form>
           <Separator />
           <form className="space-y-6">
-            <div className="space-y-2">
+            <div className="space-y-1">
               <Label>Prompt</Label>
               <Select>
                 <SelectTrigger>
@@ -95,7 +95,7 @@ export function App() {
               </Select>
             </div>
             <Separator />
-            <div className="space-y-2">
+            <div className="space-y-1">
               <Label>IA Processor</Label>
               <Select defaultValue="gpt-35" disabled>
                 <SelectTrigger>
@@ -111,7 +111,7 @@ export function App() {
             </div>
             <Separator />
 
-            <div className="space-y-4">
+            <div className="space-y-2">
               <Label>Threshold</Label>
               <Slider min={0} max={1} step={0.1} />
               <span className="block text-xs text-muted-foreground italic leading-relaxed">
